@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage Example</title>
+  <style>
+    /* Basic styling for the form */
+    form {
+      max-width: 400px;
+      margin: auto;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.7em;
+      background-color: #1a1c1e;
+      color: white;
+      border: none;
+      border-radius: 0.3em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    /* Aligning radio buttons and checkboxes */
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .radio-group label, .checkbox-group label {
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>End of year party</h1>
+  
+  <!-- Ordered list with Roman numerals -->
+  <h2>Invited guest</h2>
+  <ol type="I">
+    <li>Anthony MWangi</li>
+    <li>Bella munee</li>
+    <li>Alicia kanini</li>
+    <li>Hon Felix Tom</li>
+    <li>M.K Mwagangi</li>
+  </ol>
+  
+  <!-- External image from pexels.com -->
+  <h2>External Image</h2>
+  <img src="https://images.pexels.com/photos/31051714/traditional-chinese-bridge-in-nanjing-china.jpg" alt="Location of the party" height="500" width="700">
+  
+  <!-- Table of 5 contacts -->
+  <h2>Contacts Table</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>martin kimani</td>
+      <td>old town street</td>
+      <td>+1234567890</td>
+      <td>martinkimani@email.com</td>
+    </tr>
+    <tr>
+      <td>Jane mbithe</td>
+      <td>110 mjini St</td>
+      <td>+0987654321</td>
+      <td>janembithe@email.com</td>
+    </tr>
+    <tr>
+      <td>Bob Otis</td>
+      <td>789 Kimathi St</td>
+      <td>+1122334455</td>
+      <td>bobotis@email.com</td>
+    </tr>
+    <tr>
+      <td>Alice mzuri</td>
+      <td>101 Biashara St</td>
+      <td>+6677889900</td>
+      <td>alicemzuri@email.com</td>
+    </tr>
+    <tr>
+      <td>Charlie wafula</td>
+      <td>202 kooinange St</td>
+      <td>+4455667788</td>
+      <td>charliewafula@email.com</td>
+    </tr>
+  </table>
+  
+  <!-- Registration form -->
+  <h2>Registration Form</h2>
+  <p>Please fill below form to confirm your attendance</p>
+  
+  <form>
+    <!-- Name field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <!-- Email field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <!-- Password field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+    <!-- Date field -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    
+    <!-- Dropdown menu -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="kenya">Kenya</option>
+      <option value="uganda">Uganda</option>
+      <option value="tanzania">Tanzania</option>
+      <option value="other">Other</option>
+    </select>
+    
+    <!-- Radio buttons -->
+    <div class="radio-group">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+    </div>
+    
+    <!-- Checkboxes for drinks and meals -->
+    <div class="checkbox-group">
+      <label>Drinks/Meals:</label>
+      <input type="checkbox" id="fruit_punch" name="drinks_meals" value="fruit_punch">
+      <label for="fruit_punch">Fruit Punch</label>
+      <input type="checkbox" id="soda" name="drinks_meals" value="soda">
+      <label for="soda">Soda</label>
+      <input type="checkbox" id="water" name="drinks_meals" value="water">
+      <label for="water">Water</label>
+      <input type="checkbox" id="snacks" name="drinks_meals" value="snacks">
+      <label for="snacks">Snacks</label>
+      <input type="checkbox" id="meals" name="drinks_meals" value="meals">
+      <label for="meals">Meals</label>
+    </div>
+    
+    <!-- Submit button -->
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
